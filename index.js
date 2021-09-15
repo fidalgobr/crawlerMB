@@ -17,7 +17,7 @@ async function action(d) {
                     r.data.pipe(fs.createWriteStream(path.join(__dirname, 'arquivos/celebridades', `imagem${vezes}.jpg`)));
                     vezes++;
                 }).catch(e => {
-                    error = true;
+                    errorParam = true;
                 });
                 return errorParam;
             }
